@@ -3,6 +3,18 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Consuming Twitter Webserver</title>
+    <script>
+        window.onload = function() {
+            var xhttp = new HMLHttpRequest();
+            xhttp.onreadystatechange = funtion(){
+                if (xhttp.readyState == 4 && xhttp.status == 200){
+                    document.getElementById("twitter").innerHTML = xhttp.responseText;
+                }
+            };
+            xhttp.open("GET", "http://napp.azurewebsites.net/", true);
+            xhttp.send();
+        }
+    </script>
 
 </head>
 <body>
