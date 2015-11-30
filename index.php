@@ -15,7 +15,7 @@
                     for(var i = 0; i < tweets.length; i++)
                     {
                         tweetstring += "<h3>" + tweets[i].name + "</h3>";
-                        tweetstring += "<p>" + tweets[i].text + "</p>";
+                        tweetstring += "<p>" + tweets[i].text + "</p></br>";
                     }
                     document.getElementById("twitter").innerHTML = tweetstring;
                 }
