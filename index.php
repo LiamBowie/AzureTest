@@ -20,7 +20,7 @@
                     document.getElementById("twitter").innerHTML = tweetstring;
                 }
             };
-            xhttp.open("GET", "http://napp.azurewebsites.net/", true);
+            xhttp.open("GET", "http://napp.azurewebsites.net?q=starwars", true);
             xhttp.send();
         }
 
